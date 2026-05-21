@@ -50,7 +50,7 @@ func main() {
 	server := NewServer()
 	server.Register("Add", Add)
 	server.Register("Multiply", Multiply)
-	fmt.Println("=== 模拟客户端发起调用 ===")
+	fmt.Println("=== 发起调用 ===")
 	results, err := server.Call("Add", 10, 20)
 	if err != nil {
 		fmt.Println("调用失败:", err)
